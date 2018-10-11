@@ -1,0 +1,336 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Start with a clean slate */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*Edits the school bar*/
+.school-bar {
+	background-color: #333333;
+	width: 100%;
+	height: 35px;
+	/*Always stays on screen*/
+	position: fixed;
+	/*Determines the stack order. 
+	A greater number will lalways be shown in front of a lower number*/
+	z-index: 7;
+}
+
+/*Edits positions of school bar text*/
+.school-bar .school-bar_text {
+	text-align: center;
+	margin: 7px;
+}
+
+/*Edits the text in the school bar*/
+.school-bar .school-bar_text a {
+	color: white;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: 'Libre Franklin',Helvetica Neue,Arial,sans-serif;
+}
+
+/*Styles main nav bar*/
+.main_nav {
+	background-color: #FFF;
+	/*Lower this nav bar below the previous*/
+	top: 35px;
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	z-index: 7;
+}
+
+.main_nav li {
+	display: inline-block;
+	color: black;
+	line-height: 60px;
+	padding: 0 15px;
+}
+
+ul {
+	display: inline;
+}
+
+.orange_box {
+	position: relative;
+	top: 95px;
+	height: 350px;
+	width: 100%;
+	background-color: #FF6363;
+	/*Moves text towards center of box*/
+	display: flex;
+	justify-content: center; /*Moves text accross to center*/
+	align-items: center;	/*Moves text down towards center*/
+	flex-direction: column; /*Stacks the p vertically (top to bot)*/
+}
+
+.orange_box p {
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Libre Franklin',Helvetica Neue,Arial,sans-serif;
+}
+
+.orange_box p .subscribe {
+	color: yellow;
+}
+
+.mid_descr {
+	position: relative;
+	top: 130px;
+	display: block;
+	text-align: center;
+}
+
+.mid_descr p {
+	font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto 5px;
+}
+
+.subscription_options {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	top: 175px;
+}
+
+/*Basic Option*/
+
+.Basic .Basic_Box{
+	color: white;
+}
+
+.Basic strike {
+	color: #AEAEAE;
+}
+
+.Basic_Box {
+	height: 200px;
+	width: 300px;
+	border-style: solid;
+	border-radius: 6px;
+	text-align: left;
+	background: #2e84ed;
+}
+
+.Box_Button {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-style: solid;
+	border-radius: 6px;
+	border-color: #9B9B9B;
+	background: #9B9B9B;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: -10px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/*All Access Option*/
+
+.All_Access .All_Box{
+	color: white;
+}
+
+.All_Access strike {
+	color: #AEAEAE;
+}
+
+.All_Box {
+	height: 200px;
+	width: 300px;
+	border-style: solid;
+	border-radius: 6px;
+	text-align: left;
+	background: #0f4a92;
+}
+
+/*All Access Print Option*/
+
+.All_Access_Print .Print_Box{
+	color: white;
+}
+
+.All_Access_Print strike {
+	color: #AEAEAE;
+}
+
+.Print_Box {
+	height: 200px;
+	width: 300px;
+	border-style: solid;
+	border-radius: 6px;
+	text-align: left;
+	background: #2c2c2c;
+}
+
+.All_Box p, .Basic_Box p, .Print_Box p {
+	margin-left: 15px;
+	font-size: 20px;
+}
+
+h2.Title {
+	margin-left: 15px;
+	margin-top: 15px;
+	font-size: 24px;
+}
+
+p.Button_Text {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+p.one_year {
+	font-size: 14px;
+}
+
+p.fine_print {
+	font-size: 12px;
+	color: grey;
+}
+
+/*Add checkmark to a list instead of bullet points*/
+.subscription_options ul {
+	list-style: none;
+}
+
+.subscription_options li {
+	margin-top: 10px;
+}
+
+.subscription_options ul li:before{
+	content: "\2714\0020";
+}
+
+.subscription_options a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.subscription_options a:hover {
+	color: blue;
+}
+
+.bot_fine_print {
+	position: relative;
+	top: 200px;
+	font-size: 12px;
+	margin: auto 200px;
+}
+
+.More_Sub_Options {
+	position: relative;
+	top: 250px;
+	margin: auto 200px;
+	width: 52%;
+}
+
+.More_Sub_Options h2 {
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+
+.options {
+	background: #C7C7C7;
+	width: 400px;
+}
+
+.options.left {
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+
+.options.right {
+	float: right;
+	margin-bottom: 20px;
+}
+
+.options p {
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+
+.options p.option_title {
+	padding: 15px 0 0 15px;
+}
+
+p.option_title {
+	font-weight: bold;
+}
+
+.questions {
+	position: relative;
+	top: 500px;
+	left: -400px;
+}
+
+.questions ul {
+	list-style: none;
+}
+
+.questions li {
+	margin-bottom: 10px;
+}
+
+.questions ul li:before{
+	content: "+";
+}
+
+.questions .qTitle {
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+
+.FAQ {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background: #005BFB;
+	width: 200px;
+	padding: 10px;
+	color: white;
+	border-radius: 6px;
+	margin: 20px 0;
+}
+
+.FAQ a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.FAQ a:hover {
+	color: blue;
+}
+
+footer {
+	background: #1B1B1B;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: 550px;
+	color: white;
+}
+
+footer th {
+	text-align: left;
+	padding: 15px 100px 0 0;
+}
+
+footer table {
+	margin-top: 50px;
+}
